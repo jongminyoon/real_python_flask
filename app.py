@@ -3,7 +3,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return "Hello World!"
+    return "Type your name in the url (e.g. '/jongmin'")
+
+@app.route('/<name>')
+def hello_names(name):
+    return f"I love you {name}"
 
 if __name__ == '__main__':
     app.run()
