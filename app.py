@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return "Type your name in the url (e.g. '/jongmin')"
+    return "Type your name in the url (e.g. 'https://realpython-wordcount-pro.herokuapp.com/jongmin')"
 
 @app.route('/<name>')
 def hello_names(name):
